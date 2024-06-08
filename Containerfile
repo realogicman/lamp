@@ -9,7 +9,7 @@ CMD ["/sbin/init"]
 
 # File sorgente Podman per la creazione del container "Fedora 40 LAMP" per lo sviluppo locale di siti web
 # Progetto iniziato il 27/12/2023
-# Ultimo aggiornamento: 03/06/2024
+# Ultimo aggiornamento: 09/06/2024
 # Sviluppato da: Marco Angeli <mangeli774@gmail.com>
 # L'archivio "file_aggiunti.tgz" contiene tutte le modifiche applicate.
 
@@ -39,7 +39,7 @@ CMD ["/sbin/init"]
 # podman run -d --name nome_container -p 8080:80 f40lamp
 
 # ----
-# Utilizzo normale
+# Utilizzo quotidiano
 # 
 # podman start nome_container
 # podman inspect -f '{{.Mounts}}' nome_container
