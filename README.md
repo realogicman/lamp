@@ -17,6 +17,9 @@ Last modified: 10/06/2024
 Instructions for installing the LAMP container as a non-privileged user:
 
 ```bash
+wget https://github.com/realogicman/lamp/archive/refs/heads/main.zip
+unzip main.zip
+cd lamp-main/ 
 podman build -t f40lamp .
 podman run -d --name f40_lamp -p 8080:80 f40lamp
 ```
