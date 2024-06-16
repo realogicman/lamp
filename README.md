@@ -8,9 +8,9 @@ Mainly intended for Italian users.
 
 Documentation included under "CC BY-NC-SA 4.0 Deed" license.
 
-"ReaLoGiCMaN" is the acronym for "Marco Angeli".
+"ReaLoGiCMaN" is the anagram for "Marco Angeli".
 
-Last modified: 13/06/2024
+Last modified: 16/06/2024
 
 ----
 
