@@ -10,7 +10,7 @@ Documentation included under "CC BY-NC-SA 4.0 Deed" license.
 
 "ReaLoGiCMaN" is the anagram for "Marco Angeli".
 
-Last modified: 16/06/2024
+Last modified: 08/09/2024
 
 ----
 
@@ -24,6 +24,8 @@ podman build -t f40lamp .
 podman run -d --name f40_lamp -p 8080:80 f40lamp
 ```
 
+Service available on local port 8080
+
 ----
 
 Instructions to install the LAMP container on your system, running it automatically on every boot:
@@ -36,6 +38,8 @@ cd lamp-main/
 sudo podman build -t f40lamp .
 sudo podman run -d --name f40_lamp -p 80:80 --restart=always f40lamp
 ```
+
+Service available on local port 80
 
 ----
 
