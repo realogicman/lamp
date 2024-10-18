@@ -10,7 +10,7 @@ CMD ["/sbin/init"]
 
 # Containerfile Podman (= Dockerfile) per la creazione del container "Fedora 40 LAMP" per lo sviluppo locale di siti web
 # Progetto iniziato il 27/12/2023
-# Ultimo aggiornamento: 22/09/2024
+# Ultimo aggiornamento: 18/10/2024
 # L'archivio "file_aggiunti.tgz" contiene tutte le modifiche applicate.
 # Il volume montato serve solo per il caricamento dei file e la sua funzione è puramente di servizio.
 # In caso di "commit" il contenuto di quella cartella del container ("/srv/storage") verrà ovviamente scartato.
@@ -39,8 +39,13 @@ CMD ["/sbin/init"]
 # 
 # ----
 # 
-# === Utilizzo quotidiano ===
+# === Utilizzo quotidiano - non privilegiato===
 #   podman start f40_lamp
 #   podman inspect -f '{{.Mounts}}' f40_lamp
 #   podman exec -ti f40_lamp /bin/bash
 #   podman stop f40_lamp
+#
+# === Installazione come servizio - in esecuzione permanente ===
+#   sudo systemctl enable podman-restart.service
+#   sudo podman load -i f40lamp.podman-image
+#   sudo podman run -d --name f40_lamp -p 80:80 --restart=always f40lamp
