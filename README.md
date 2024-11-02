@@ -1,6 +1,6 @@
 # LAMP
 
-## Podman container: Fedora 40 LAMP + phpMyAdmin + DokuWiki_ITA
+## Podman container: Fedora LAMP + phpMyAdmin + DokuWiki_ITA
 
 Container initially made for personal use.
 
@@ -10,7 +10,7 @@ Documentation included under "CC BY-NC-SA 4.0 Deed" license.
 
 "ReaLoGiCMaN" is the anagram for "Marco Angeli".
 
-Last modified: 18/10/2024
+Last modified: 02/11/2024
 
 ----
 
@@ -20,8 +20,8 @@ Instructions for installing the LAMP container as a non-privileged user:
 wget https://github.com/realogicman/lamp/archive/refs/heads/main.zip
 unzip main.zip
 cd lamp-main/ 
-podman build -t f40lamp .
-podman run -d --name f40_lamp -p 8080:80 f40lamp
+podman build -t lamp .
+podman run -d --name container_lamp -p 8080:80 lamp
 ```
 
 Service available on local port 8080
@@ -35,8 +35,8 @@ sudo systemctl enable podman-restart.service
 wget https://github.com/realogicman/lamp/archive/refs/heads/main.zip
 unzip main.zip
 cd lamp-main/ 
-sudo podman build -t f40lamp .
-sudo podman run -d --name f40_lamp -p 80:80 --restart=always f40lamp
+sudo podman build -t lamp .
+sudo podman run -d --name container_lamp -p 80:80 --restart=always lamp
 ```
 
 Service available on local port 80
