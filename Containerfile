@@ -10,7 +10,7 @@ CMD ["/sbin/init"]
 
 # Containerfile Podman (= Dockerfile) per la creazione del container "Fedora LAMP" per lo sviluppo locale di siti web
 # Progetto iniziato il 27/12/2023
-# Ultimo aggiornamento: 14/11/2024
+# Ultimo aggiornamento: 16/11/2024
 # L'archivio "file_aggiunti.tgz" contiene tutte le modifiche applicate.
 # Il volume montato serve solo per il caricamento dei file e la sua funzione è puramente di servizio.
 # In caso di "commit" il contenuto di quella cartella del container ("/srv/storage") verrà ovviamente scartato.
