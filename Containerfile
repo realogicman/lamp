@@ -1,7 +1,7 @@
 # https://github.com/realogicman/lamp
 FROM registry.fedoraproject.org/fedora
 LABEL maintainer="Marco Angeli <mangeli774@gmail.com>"
-RUN dnf -y upgrade && dnf -y install httpd mariadb-server php php-mysqlnd php-mbstring php-gd php-json phpmyadmin nano mc unzip unrar git wget nmap fastfetch
+RUN dnf -y upgrade && dnf -y install httpd mariadb-server php php-mysqlnd php-mbstring php-gd php-json phpmyadmin iputils nano mc unzip unrar git wget nmap fastfetch
 ADD file_aggiunti.tgz /
 RUN systemctl enable httpd && systemctl enable mariadb && systemctl enable lamp-1st-boot
 VOLUME ["/srv/storage"]
@@ -10,12 +10,12 @@ CMD ["/sbin/init"]
 
 # Containerfile Podman (= Dockerfile) per la creazione del container "Fedora LAMP" per lo sviluppo locale di siti web
 # Progetto iniziato il 27/12/2023
-# Ultimo aggiornamento: 16/11/2024
+# Ultimo aggiornamento: 18/11/2024
 # L'archivio "file_aggiunti.tgz" contiene tutte le modifiche applicate.
 # Il volume montato serve solo per il caricamento dei file e la sua funzione è puramente di servizio.
 # In caso di "commit" il contenuto di quella cartella del container ("/srv/storage") verrà ovviamente scartato.
 # 
-### 
+# ----
 # 
 # === Creazione immagine ===
 #   podman build -t lamp .

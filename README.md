@@ -10,9 +10,7 @@ Documentation included under "CC BY-NC-SA 4.0 Deed" license.
 
 "ReaLoGiCMaN" is the anagram for "Marco Angeli".
 
-Last modified: 16/11/2024
-
-![Screenshot](https://github.com/realogicman/lamp/blob/main/20241116%20LAMP.png)
+Last modified: 18/11/2024
 
 ----
 
