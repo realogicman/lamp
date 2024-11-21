@@ -12,6 +12,8 @@ Documentation included under "CC BY-NC-SA 4.0 Deed" license.
 
 Last modified: 22/11/2024
 
+![realogicman-lamp](https://raw.githubusercontent.com/realogicman/lamp/refs/heads/main/realogicman-lamp.png)
+
 ----
 
 Instructions for installing the LAMP container as a non-privileged user:
