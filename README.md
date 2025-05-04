@@ -2,15 +2,13 @@
 
 ## Podman container: Fedora LAMP + phpMyAdmin + DokuWiki_ITA
 
-Container initially made for personal use.
+Container initially made for personal use, mainly intended for Italian users. NO WARRANTY.
 
-Mainly intended for Italian users.
+Documentation included under license "CC BY-NC-SA 4.0 Deed".
 
-Documentation included under "CC BY-NC-SA 4.0 Deed" license.
+"ReaLoGiCMaN" is an anagram of "Marco Angeli".
 
-"ReaLoGiCMaN" is the anagram for "Marco Angeli".
-
-Last modified: 21/04/2025
+Last modified: 04/05/2025
 
 ----
 
@@ -43,5 +41,6 @@ Service available on local port 80
 
 ----
 
-Documentation integrated into the container.
-![didascalia di immagine](realogicman-lamp.png)
+Documentation included in the container.
+
+![](20250504_lamp.webp)
