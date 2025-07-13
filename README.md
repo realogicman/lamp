@@ -8,7 +8,7 @@ Documentation included under license "CC BY-NC-SA 4.0 Deed".
 
 "ReaLoGiCMaN" is an anagram of "Marco Angeli".
 
-Last modified: 04/05/2025
+Last modified: 13/07/2025
 
 ----
 
@@ -43,4 +43,4 @@ Service available on local port 80
 
 Documentation included in the container.
 
-![](20250504_lamp.webp)
+![](lamp.webp)
