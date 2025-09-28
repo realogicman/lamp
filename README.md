@@ -19,7 +19,7 @@ wget https://github.com/realogicman/lamp/archive/refs/heads/main.zip
 unzip main.zip
 cd lamp-main/ 
 podman build -t lamp .
-podman run -d --name container_lamp -p 8080:80 lamp
+podman run -d --name container_lamp -h containerlamp -p 8080:80 lamp
 ```
 
 Service available on local port 8080
@@ -34,7 +34,7 @@ wget https://github.com/realogicman/lamp/archive/refs/heads/main.zip
 unzip main.zip
 cd lamp-main/ 
 sudo podman build -t lamp .
-sudo podman run -d --name container_lamp -p 80:80 --restart=always lamp
+sudo podman run -d --name container_lamp -h containerlamp -p 80:80 --restart=always lamp
 ```
 
 Service available on local port 80

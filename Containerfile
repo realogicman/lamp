@@ -35,7 +35,7 @@ CMD ["/sbin/init"]
 #   podman load -i lamp.podman-image
 # 
 # === Eseguire il container ===
-#   podman run -d --name container_lamp -p 8080:80 lamp
+#   podman run -d --name container_lamp -h containerlamp -p 8080:80 lamp
 # 
 # ----
 # 
@@ -48,4 +48,4 @@ CMD ["/sbin/init"]
 # === Installazione come servizio - in esecuzione permanente ===
 #   sudo systemctl enable podman-restart.service
 #   sudo podman load -i lamp.podman-image
-#   sudo podman run -d --name container_lamp -p 80:80 --restart=always lamp
+#   sudo podman run -d --name container_lamp -h containerlamp -p 80:80 --restart=always lamp
